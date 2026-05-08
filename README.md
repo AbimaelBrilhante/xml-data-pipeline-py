@@ -1,5 +1,7 @@
 # Fiscal XML Data Pipeline: Automated ETL & Reporting
 
+![Interface do Sistema](app_preview.png)
+
 ## 📌 Project Overview
 This project is a high-performance **Data Pipeline** developed in Python to automate the ingestion and processing of Brazilian Electronic Tax Documents (**NF-e** and **CT-e**). 
 

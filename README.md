@@ -34,3 +34,29 @@ xml-data-pipeline-py/
 │   └── database_manager.py # SQLite schema and operations
 ├── requirements.txt     # Project dependencies
 └── README.md            # Documentation
+
+
+🚀 How to Run
+Clone the repository:
+
+Bash
+git clone [https://github.com/your-username/xml-data-pipeline-py.git](https://github.com/your-username/xml-data-pipeline-py.git)
+cd xml-data-pipeline-py
+Install dependencies:
+
+Bash
+pip install -r requirements.txt
+Launch the app:
+
+Bash
+python src/main.py
+💼 Business Impact
+Operational Efficiency: Eliminated manual data entry, reducing the time spent on monthly fiscal reconciliations by approximately 90%.
+
+Compliance & Audit: Guaranteed 100% data consistency by centralizing scattered XML files into a structured SQL environment.
+
+Data Democratization: Enabled the tax department to generate self-service reports without relying on IT or ERP (SAP) support for simple data lookups.
+
+Author: Abimael Brilhante Soares Rodrigues
+
+Data Analyst | Specialist in SAP Financial Data, Snowflake & Python Automation

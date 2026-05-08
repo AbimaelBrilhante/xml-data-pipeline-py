@@ -5,15 +5,18 @@ Description: Main script to launch the Fiscal Automation GUI.
 """
 import sys
 import os
-
-# Adiciona a pasta 'src' ao caminho do sistema para evitar erros de importação
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from src.main_interface import FiscalApp
-import tkinter as tk
 import logging
 
-# Configuração de Logs para monitoramento do sistema
+# Adiciona a pasta raiz ao caminho para garantir que os módulos sejam encontrados
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Importa a classe da nova interface moderna
+from src.main_interface import FiscalApp
+
+# Configuração de Logs (MANTENHA ISSO)
+if not os.path.exists("data"):
+    os.makedirs("data")
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -26,9 +29,9 @@ logging.basicConfig(
 def main():
     try:
         logging.info("Starting Fiscal Automation System...")
-        root = tk.Tk()
-        app = FiscalApp(root)
-        root.mainloop()
+        # Inicialização simplificada para CustomTkinter
+        app = FiscalApp() 
+        app.mainloop()
     except Exception as e:
         logging.critical(f"System failed to start: {e}")
 
